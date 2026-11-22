@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/statvamasi/torch/internal/config"
+	"github.com/ShubhamTatvamasi/torch/internal/config"
 )
 
 // APIError is a non-2xx response from the server.

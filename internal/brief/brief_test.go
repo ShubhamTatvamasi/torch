@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/statvamasi/torch/internal/plan"
+	"github.com/ShubhamTatvamasi/torch/internal/plan"
 )
 
 func fixture() (*plan.Plan, *plan.Step) {

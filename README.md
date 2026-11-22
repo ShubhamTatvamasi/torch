@@ -66,6 +66,12 @@ go test ./...
 go install ./cmd/torch
 ```
 
+Or install the latest pushed version:
+
+```sh
+go install github.com/ShubhamTatvamasi/torch/cmd/torch@latest
+```
+
 ## Quickstart
 
 1. Write the plan as Markdown in your repo:

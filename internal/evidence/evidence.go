@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/statvamasi/torch/internal/opencode"
+	"github.com/ShubhamTatvamasi/torch/internal/opencode"
 )
 
 // MaxTranscript caps the transcript tail handed to the judge.

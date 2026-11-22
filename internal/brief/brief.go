@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/statvamasi/torch/internal/plan"
+	"github.com/ShubhamTatvamasi/torch/internal/plan"
 )
 
 // Constraints are the standing rules for every coding session.

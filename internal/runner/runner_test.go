@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/statvamasi/torch/internal/config"
-	"github.com/statvamasi/torch/internal/opencode"
-	"github.com/statvamasi/torch/internal/plan"
+	"github.com/ShubhamTatvamasi/torch/internal/config"
+	"github.com/ShubhamTatvamasi/torch/internal/opencode"
+	"github.com/ShubhamTatvamasi/torch/internal/plan"
 )
 
 type fakeServer struct {

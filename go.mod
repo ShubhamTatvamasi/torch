@@ -1,3 +1,3 @@
-module github.com/statvamasi/torch
+module github.com/ShubhamTatvamasi/torch
 
 go 1.24

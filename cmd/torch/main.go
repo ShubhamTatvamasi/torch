@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/statvamasi/torch/internal/cli"
+	"github.com/ShubhamTatvamasi/torch/internal/cli"
 )
 
 func main() {

@@ -15,10 +15,10 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/statvamasi/torch/internal/config"
-	"github.com/statvamasi/torch/internal/opencode"
-	"github.com/statvamasi/torch/internal/plan"
-	"github.com/statvamasi/torch/internal/runner"
+	"github.com/ShubhamTatvamasi/torch/internal/config"
+	"github.com/ShubhamTatvamasi/torch/internal/opencode"
+	"github.com/ShubhamTatvamasi/torch/internal/plan"
+	"github.com/ShubhamTatvamasi/torch/internal/runner"
 )
 
 // Version is overridden at build time with -ldflags "-X ...cli.Version=...".

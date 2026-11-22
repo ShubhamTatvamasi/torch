@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/statvamasi/torch/internal/runner"
+	"github.com/ShubhamTatvamasi/torch/internal/runner"
 )
 
 // ui is a tiny renderer. No dependency, no layout engine: a terminal tool

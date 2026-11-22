@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/statvamasi/torch/internal/brief"
-	"github.com/statvamasi/torch/internal/config"
-	"github.com/statvamasi/torch/internal/evidence"
-	"github.com/statvamasi/torch/internal/judge"
-	"github.com/statvamasi/torch/internal/opencode"
-	"github.com/statvamasi/torch/internal/plan"
+	"github.com/ShubhamTatvamasi/torch/internal/brief"
+	"github.com/ShubhamTatvamasi/torch/internal/config"
+	"github.com/ShubhamTatvamasi/torch/internal/evidence"
+	"github.com/ShubhamTatvamasi/torch/internal/judge"
+	"github.com/ShubhamTatvamasi/torch/internal/opencode"
+	"github.com/ShubhamTatvamasi/torch/internal/plan"
 )
 
 // Action is what the supervisor decided to do next.

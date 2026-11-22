@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/statvamasi/torch/internal/fsutil"
-	"github.com/statvamasi/torch/internal/opencode"
-	"github.com/statvamasi/torch/internal/plan"
+	"github.com/ShubhamTatvamasi/torch/internal/fsutil"
+	"github.com/ShubhamTatvamasi/torch/internal/opencode"
+	"github.com/ShubhamTatvamasi/torch/internal/plan"
 )
 
 // State is the supervisor's checkpoint. OpenCode owns the conversation; this

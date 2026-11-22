@@ -12,9 +12,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/statvamasi/torch/internal/brief"
-	"github.com/statvamasi/torch/internal/opencode"
-	"github.com/statvamasi/torch/internal/plan"
+	"github.com/ShubhamTatvamasi/torch/internal/brief"
+	"github.com/ShubhamTatvamasi/torch/internal/opencode"
+	"github.com/ShubhamTatvamasi/torch/internal/plan"
 )
 
 // Verdict is the judge's structured answer.

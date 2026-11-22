@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/statvamasi/torch/internal/fsutil"
+	"github.com/ShubhamTatvamasi/torch/internal/fsutil"
 )
 
 // Version is the schema version written into new plans.
