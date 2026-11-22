@@ -1,0 +1,83 @@
+version: '3'
+
+vars:
+  BINARY: bin/torch
+  PKG: ./cmd/torch
+
+tasks:
+  default:
+    desc: List available tasks
+    silent: true
+    cmds:
+      - task --list
+
+  build:
+    desc: Build the torch binary
+    cmds:
+      - go build -o {{.BINARY}} {{.PKG}}
+    sources:
+      - ./**/*.go
+      - go.mod
+    generates:
+      - '{{.BINARY}}'
+
+  test:
+    desc: Run the test suite
+    cmds:
+      - go test ./...
+
+  test:race:
+    desc: Run the test suite with the race detector
+    cmds:
+      - go test -race ./...
+
+  fmt:
+    desc: Format Go sources
+    cmds:
+      - gofmt -w .
+
+  fmt:check:
+    desc: Fail if any Go source is not formatted
+    cmds:
+      - |
+        files=$(gofmt -l .)
+        if [ -n "$files" ]; then
+          echo "not formatted:"
+          echo "$files"
+          exit 1
+        fi
+
+  vet:
+    desc: Run go vet
+    cmds:
+      - go vet ./...
+
+  check:
+    desc: Format, vet, and test (the pre-push gate)
+    cmds:
+      - task: fmt
+      - task: vet
+      - task: test
+
+  ci:
+    desc: Verify formatting, vet, tests, and a clean build
+    cmds:
+      - task: fmt:check
+      - task: vet
+      - task: test
+      - task: build
+
+  install:
+    desc: Install torch into GOBIN
+    cmds:
+      - go install {{.PKG}}
+
+  run:
+    desc: Run torch; pass CLI arguments after --
+    cmds:
+      - go run {{.PKG}} {{.CLI_ARGS}}
+
+  clean:
+    desc: Remove build output
+    cmds:
+      - rm -rf bin

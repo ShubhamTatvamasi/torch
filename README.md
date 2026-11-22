@@ -47,11 +47,22 @@ commit plus a progress update. See [`docs/agent-research.md`](docs/agent-researc
 
 No third-party Go dependencies.
 
-## Install
+## Build and test
+
+[Task](https://taskfile.dev) drives the development workflow:
+
+```sh
+task          # list tasks
+task build    # build bin/torch
+task check    # gofmt + go vet + tests
+task ci       # what CI should run
+```
+
+Without Task, the same commands work directly:
 
 ```sh
 go build -o bin/torch ./cmd/torch
-# or
+go test ./...
 go install ./cmd/torch
 ```
 
