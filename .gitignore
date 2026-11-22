@@ -6,3 +6,6 @@
 # under version control: they are the project's memory.
 .torch/state.json
 .torch/runs/
+
+# Task runner cache
+.task/
