@@ -1,0 +1,8 @@
+# Build output
+/bin/
+/dist/
+
+# Local supervisor checkpoint and audit log. Keep plan.json and PROGRESS.md
+# under version control: they are the project's memory.
+.torch/state.json
+.torch/runs/
